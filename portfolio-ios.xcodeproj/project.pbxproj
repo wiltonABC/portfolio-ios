@@ -7,13 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		480699C4220788D5008061C5 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480699C3220788D5008061C5 /* Profile.swift */; };
+		4870935A2207935300C0A559 /* ProfileApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487093592207935300C0A559 /* ProfileApiClient.swift */; };
+		4883833D220946960058399C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4883833C220946960058399C /* TabBarController.swift */; };
+		489DDEB3220CE66700B81DDD /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489DDEB2220CE66700B81DDD /* ImageLoader.swift */; };
+		48A7CF612210C1CF00151A0C /* SkillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A7CF602210C1CF00151A0C /* SkillTableViewCell.swift */; };
+		48A7CF632210C40C00151A0C /* SkillCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A7CF622210C40C00151A0C /* SkillCategory.swift */; };
+		48A7CF652210C6EC00151A0C /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A7CF642210C6EC00151A0C /* Skill.swift */; };
+		48A7CF692210CA8F00151A0C /* SkillsApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A7CF682210CA8F00151A0C /* SkillsApiClient.swift */; };
+		48A7CF6B2210CF0000151A0C /* SkillsDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A7CF6A2210CF0000151A0C /* SkillsDataHandler.swift */; };
+		48A865E122163530004A630B /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A865E022163530004A630B /* WorkViewController.swift */; };
+		48A865E322163581004A630B /* WorksApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A865E222163581004A630B /* WorksApiClient.swift */; };
+		48A865E5221635C4004A630B /* WorkDone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A865E4221635C4004A630B /* WorkDone.swift */; };
+		48D3EA7122163B6300D0E4F7 /* WorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D3EA7022163B6300D0E4F7 /* WorkTableViewCell.swift */; };
+		48DF273C2207B884008AC2F2 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DF273B2207B884008AC2F2 /* AboutViewController.swift */; };
+		48DF273E2207BCBB008AC2F2 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DF273D2207BCBB008AC2F2 /* SkillsViewController.swift */; };
+		48FE20822210F00E005600EC /* SkillCategoryTableViewHeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FE20812210F00E005600EC /* SkillCategoryTableViewHeaderFooterView.xib */; };
+		48FE20842210F255005600EC /* SkillTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE20832210F255005600EC /* SkillTableViewSection.swift */; };
 		48FF335522071D080035DB0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF335422071D080035DB0B /* AppDelegate.swift */; };
-		48FF335722071D080035DB0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF335622071D080035DB0B /* ViewController.swift */; };
+		48FF335722071D080035DB0B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF335622071D080035DB0B /* MainViewController.swift */; };
 		48FF335A22071D080035DB0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FF335822071D080035DB0B /* Main.storyboard */; };
 		48FF335C22071D0B0035DB0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48FF335B22071D0B0035DB0B /* Assets.xcassets */; };
 		48FF335F22071D0B0035DB0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FF335D22071D0B0035DB0B /* LaunchScreen.storyboard */; };
 		48FF336A22071D0B0035DB0B /* portfolio_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF336922071D0B0035DB0B /* portfolio_iosTests.swift */; };
 		48FF337522071D0B0035DB0B /* portfolio_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF337422071D0B0035DB0B /* portfolio_iosUITests.swift */; };
+		48FF3385220742CC0035DB0B /* html_code.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48FF3384220742CC0035DB0B /* html_code.jpg */; };
+		48FF338722074E180035DB0B /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = 48FF338622074E180035DB0B /* person.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +53,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		480699C3220788D5008061C5 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		487093592207935300C0A559 /* ProfileApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileApiClient.swift; sourceTree = "<group>"; };
+		4883833C220946960058399C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		489DDEB2220CE66700B81DDD /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		48A7CF602210C1CF00151A0C /* SkillTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTableViewCell.swift; sourceTree = "<group>"; };
+		48A7CF622210C40C00151A0C /* SkillCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCategory.swift; sourceTree = "<group>"; };
+		48A7CF642210C6EC00151A0C /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		48A7CF682210CA8F00151A0C /* SkillsApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsApiClient.swift; sourceTree = "<group>"; };
+		48A7CF6A2210CF0000151A0C /* SkillsDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsDataHandler.swift; sourceTree = "<group>"; };
+		48A865E022163530004A630B /* WorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
+		48A865E222163581004A630B /* WorksApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorksApiClient.swift; sourceTree = "<group>"; };
+		48A865E4221635C4004A630B /* WorkDone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkDone.swift; sourceTree = "<group>"; };
+		48D3EA7022163B6300D0E4F7 /* WorkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTableViewCell.swift; sourceTree = "<group>"; };
+		48DF273B2207B884008AC2F2 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		48DF273D2207BCBB008AC2F2 /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
+		48FE20812210F00E005600EC /* SkillCategoryTableViewHeaderFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkillCategoryTableViewHeaderFooterView.xib; sourceTree = "<group>"; };
+		48FE20832210F255005600EC /* SkillTableViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTableViewSection.swift; sourceTree = "<group>"; };
 		48FF335122071D080035DB0B /* portfolio-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "portfolio-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FF335422071D080035DB0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		48FF335622071D080035DB0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		48FF335622071D080035DB0B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		48FF335922071D080035DB0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48FF335B22071D0B0035DB0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48FF335E22071D0B0035DB0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +83,8 @@
 		48FF337022071D0B0035DB0B /* portfolio-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "portfolio-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FF337422071D0B0035DB0B /* portfolio_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = portfolio_iosUITests.swift; sourceTree = "<group>"; };
 		48FF337622071D0B0035DB0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48FF3384220742CC0035DB0B /* html_code.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = html_code.jpg; sourceTree = "<group>"; };
+		48FF338622074E180035DB0B /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +112,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		480699C2220788B0008061C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				480699C3220788D5008061C5 /* Profile.swift */,
+				48A7CF622210C40C00151A0C /* SkillCategory.swift */,
+				48A7CF642210C6EC00151A0C /* Skill.swift */,
+				48A7CF6A2210CF0000151A0C /* SkillsDataHandler.swift */,
+				48A865E4221635C4004A630B /* WorkDone.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		48709358220792EA00C0A559 /* ApiClients */ = {
+			isa = PBXGroup;
+			children = (
+				487093592207935300C0A559 /* ProfileApiClient.swift */,
+				48A7CF682210CA8F00151A0C /* SkillsApiClient.swift */,
+				48A865E222163581004A630B /* WorksApiClient.swift */,
+			);
+			path = ApiClients;
+			sourceTree = "<group>";
+		};
+		489DDEB1220CE60700B81DDD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				489DDEB2220CE66700B81DDD /* ImageLoader.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		48A7CF5F2210C19500151A0C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				48A7CF602210C1CF00151A0C /* SkillTableViewCell.swift */,
+				48FE20812210F00E005600EC /* SkillCategoryTableViewHeaderFooterView.xib */,
+				48FE20832210F255005600EC /* SkillTableViewSection.swift */,
+				48D3EA7022163B6300D0E4F7 /* WorkTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		48FF334822071D080035DB0B = {
 			isa = PBXGroup;
 			children = (
@@ -98,11 +177,16 @@
 			isa = PBXGroup;
 			children = (
 				48FF335422071D080035DB0B /* AppDelegate.swift */,
-				48FF335622071D080035DB0B /* ViewController.swift */,
+				48A7CF5F2210C19500151A0C /* Views */,
+				489DDEB1220CE60700B81DDD /* Shared */,
+				48709358220792EA00C0A559 /* ApiClients */,
+				480699C2220788B0008061C5 /* Models */,
+				48FF3382220720910035DB0B /* Controllers */,
 				48FF335822071D080035DB0B /* Main.storyboard */,
 				48FF335B22071D0B0035DB0B /* Assets.xcassets */,
 				48FF335D22071D0B0035DB0B /* LaunchScreen.storyboard */,
 				48FF336022071D0B0035DB0B /* Info.plist */,
+				48FF33832207426E0035DB0B /* Assets */,
 			);
 			path = "portfolio-ios";
 			sourceTree = "<group>";
@@ -123,6 +207,27 @@
 				48FF337622071D0B0035DB0B /* Info.plist */,
 			);
 			path = "portfolio-iosUITests";
+			sourceTree = "<group>";
+		};
+		48FF3382220720910035DB0B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				48FF335622071D080035DB0B /* MainViewController.swift */,
+				48DF273B2207B884008AC2F2 /* AboutViewController.swift */,
+				48DF273D2207BCBB008AC2F2 /* SkillsViewController.swift */,
+				4883833C220946960058399C /* TabBarController.swift */,
+				48A865E022163530004A630B /* WorkViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		48FF33832207426E0035DB0B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				48FF338622074E180035DB0B /* person.png */,
+				48FF3384220742CC0035DB0B /* html_code.jpg */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +334,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48FE20822210F00E005600EC /* SkillCategoryTableViewHeaderFooterView.xib in Resources */,
 				48FF335F22071D0B0035DB0B /* LaunchScreen.storyboard in Resources */,
 				48FF335C22071D0B0035DB0B /* Assets.xcassets in Resources */,
 				48FF335A22071D080035DB0B /* Main.storyboard in Resources */,
+				48FF3385220742CC0035DB0B /* html_code.jpg in Resources */,
+				48FF338722074E180035DB0B /* person.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +364,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48FF335722071D080035DB0B /* ViewController.swift in Sources */,
+				48A865E5221635C4004A630B /* WorkDone.swift in Sources */,
+				48A865E122163530004A630B /* WorkViewController.swift in Sources */,
+				48A7CF6B2210CF0000151A0C /* SkillsDataHandler.swift in Sources */,
+				48FF335722071D080035DB0B /* MainViewController.swift in Sources */,
+				48D3EA7122163B6300D0E4F7 /* WorkTableViewCell.swift in Sources */,
+				480699C4220788D5008061C5 /* Profile.swift in Sources */,
 				48FF335522071D080035DB0B /* AppDelegate.swift in Sources */,
+				48DF273C2207B884008AC2F2 /* AboutViewController.swift in Sources */,
+				4883833D220946960058399C /* TabBarController.swift in Sources */,
+				48DF273E2207BCBB008AC2F2 /* SkillsViewController.swift in Sources */,
+				48FE20842210F255005600EC /* SkillTableViewSection.swift in Sources */,
+				48A7CF612210C1CF00151A0C /* SkillTableViewCell.swift in Sources */,
+				48A7CF632210C40C00151A0C /* SkillCategory.swift in Sources */,
+				489DDEB3220CE66700B81DDD /* ImageLoader.swift in Sources */,
+				48A7CF652210C6EC00151A0C /* Skill.swift in Sources */,
+				4870935A2207935300C0A559 /* ProfileApiClient.swift in Sources */,
+				48A865E322163581004A630B /* WorksApiClient.swift in Sources */,
+				48A7CF692210CA8F00151A0C /* SkillsApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +557,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H825R7B48D;
 				INFOPLIST_FILE = "portfolio-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -442,6 +567,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WEBAPI_ROOT_URL = "http://portfolio-wilton.us-east-2.elasticbeanstalk.com";
+				WEBAPI_URL = "http://portfolio-wilton.us-east-2.elasticbeanstalk.com/webapi";
 			};
 			name = Debug;
 		};
@@ -450,6 +577,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H825R7B48D;
 				INFOPLIST_FILE = "portfolio-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,6 +587,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WEBAPI_ROOT_URL = "http://portfolio-wilton.us-east-2.elasticbeanstalk.com";
+				WEBAPI_URL = "http://portfolio-wilton.us-east-2.elasticbeanstalk.com/webapi";
 			};
 			name = Release;
 		};
