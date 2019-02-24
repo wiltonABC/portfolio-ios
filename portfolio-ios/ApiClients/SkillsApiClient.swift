@@ -8,21 +8,26 @@
 
 import Foundation
 
+
+
 class SkillsApiClient {
+    
     let webApiUrl = Bundle.main.infoDictionary?["WEBAPI_URL"] as! String
     
     func getSkillsByProfileId(_ id : Int, success:@escaping(_ skills:[Skill]) -> Void, fail:@escaping(_ error:Error) -> Void) {
         if let url = URL(string: webApiUrl + "/profiles/\(id)/skills") {
             var urlRequest = URLRequest(url: url)
             urlRequest.httpMethod = "GET"
-            urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            urlRequest.addValue("application/json", forHTTPHeaderField: "Accept")
             urlRequest.timeoutInterval = 7000
             
             let task = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
                 if error == nil {
                     if let jsonData = data {
                         do {
-                            let skills = try JSONDecoder().decode([Skill].self, from: jsonData) as [Skill]
+                            let decoder = JSONDecoder()
+                            decoder.dateDecodingStrategy = .millisecondsSince1970
+                            let skills = try decoder.decode([Skill].self, from: jsonData) as [Skill]
                             success(skills)
                         } catch {
                             fail(error)

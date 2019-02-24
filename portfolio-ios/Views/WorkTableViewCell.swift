@@ -19,6 +19,8 @@ class WorkTableViewCell: UITableViewCell {
         self.workTitle.text = work.name
         self.workDescription.text = work.description
         let baseUrl = Bundle.main.infoDictionary?["WEBAPI_ROOT_URL"] as! String
+        
+        self.workImage.image = nil
         Imageloader().getImageFromUrl(baseUrl + "/\(work.image)", success: { (imageData) in
             DispatchQueue.main.async {
                 self.workImage.image = UIImage(data: imageData)

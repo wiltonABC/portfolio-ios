@@ -10,30 +10,26 @@ import Foundation
 
 class Imageloader {
     
-    static var imageCache : Dictionary<String,Data>?
-    
-    init() {
-        if Imageloader.imageCache == nil {
-            Imageloader.imageCache = Dictionary<String,Data>()
-        }
-    }
+    static var imageCache = Dictionary<String,Data>()
     
     func getImageFromUrl(_ stringUrl : String, success : @escaping(_ imageData:Data) -> Void, fail : @escaping(_ error:Error) -> Void) {
         
         DispatchQueue.global(qos:.userInitiated).async {
                 do {
-                    if var cache = Imageloader.imageCache {
-                        if !cache.contains(where: { (item) -> Bool in
-                            item.key == stringUrl
-                        }) {
-                            let url = URL(string: stringUrl)!
-                            let data = try Data(contentsOf: url)
-                            cache[stringUrl] = data
-                            success(data)
-                        } else {
-                            success(cache[stringUrl]!)
-                        }
+
+                    if !Imageloader.imageCache.contains(where: { (item) -> Bool in
+                        item.key == stringUrl
+                    }) {
+                        let url = URL(string: stringUrl)!
+                        let data = try Data(contentsOf: url)
+                        Imageloader.imageCache[stringUrl] = data
+//                        print("Downloading image")
+                        success(data)
+                    } else {
+//                        print("Loading image from cache")
+                        success(Imageloader.imageCache[stringUrl]!)
                     }
+
                 } catch {
                     fail(error)
                 }

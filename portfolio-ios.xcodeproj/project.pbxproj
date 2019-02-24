@@ -10,6 +10,10 @@
 		480699C4220788D5008061C5 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480699C3220788D5008061C5 /* Profile.swift */; };
 		4870935A2207935300C0A559 /* ProfileApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487093592207935300C0A559 /* ProfileApiClient.swift */; };
 		4883833D220946960058399C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4883833C220946960058399C /* TabBarController.swift */; };
+		48967B57221B77FB004A7435 /* FeedbacksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48967B56221B77FB004A7435 /* FeedbacksViewController.swift */; };
+		48967B59221B7888004A7435 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48967B58221B7888004A7435 /* Feedback.swift */; };
+		48967B5B221B7988004A7435 /* FeedbacksApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48967B5A221B7988004A7435 /* FeedbacksApiClient.swift */; };
+		489C14E722224EAB0080E3DA /* linkedin.png in Resources */ = {isa = PBXBuildFile; fileRef = 489C14E622224EA00080E3DA /* linkedin.png */; };
 		489DDEB3220CE66700B81DDD /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489DDEB2220CE66700B81DDD /* ImageLoader.swift */; };
 		48A7CF612210C1CF00151A0C /* SkillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A7CF602210C1CF00151A0C /* SkillTableViewCell.swift */; };
 		48A7CF632210C40C00151A0C /* SkillCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A7CF622210C40C00151A0C /* SkillCategory.swift */; };
@@ -19,9 +23,21 @@
 		48A865E122163530004A630B /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A865E022163530004A630B /* WorkViewController.swift */; };
 		48A865E322163581004A630B /* WorksApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A865E222163581004A630B /* WorksApiClient.swift */; };
 		48A865E5221635C4004A630B /* WorkDone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A865E4221635C4004A630B /* WorkDone.swift */; };
+		48A8A6302222DF0200A099F4 /* Octocat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 48A8A62F2222DEDF00A099F4 /* Octocat.jpg */; };
+		48A8E39B221E22FB00E67C1A /* FeedbacksListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A8E39A221E22FB00E67C1A /* FeedbacksListView.xib */; };
+		48A8E39E221E2E1900E67C1A /* show_feedbacks.png in Resources */ = {isa = PBXBuildFile; fileRef = 48A8E399221E1F7400E67C1A /* show_feedbacks.png */; };
+		48A8E3A0221E2FC300E67C1A /* FeedbacksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A8E39F221E2FC300E67C1A /* FeedbacksListView.swift */; };
+		48ABBBE22217974600F74539 /* MessageTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABBBE12217974600F74539 /* MessageTextView.swift */; };
+		48AE99DB221A39160068C087 /* ValidationAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AE99DA221A39160068C087 /* ValidationAlertController.swift */; };
+		48B27EA72220C55300F7249F /* FeedbackCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B27EA62220C55300F7249F /* FeedbackCellView.swift */; };
+		48B27EA92220C57900F7249F /* FeedbackCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48B27EA82220C57900F7249F /* FeedbackCellView.xib */; };
+		48B9F98F22178E8B00C8177C /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B9F98E22178E8B00C8177C /* ContactViewController.swift */; };
 		48D3EA7122163B6300D0E4F7 /* WorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D3EA7022163B6300D0E4F7 /* WorkTableViewCell.swift */; };
+		48DF1EF422188DEF00DB94BE /* ContactApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DF1EF322188DEF00DB94BE /* ContactApiClient.swift */; };
+		48DF1EF622188E5A00DB94BE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DF1EF522188E5A00DB94BE /* Message.swift */; };
 		48DF273C2207B884008AC2F2 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DF273B2207B884008AC2F2 /* AboutViewController.swift */; };
 		48DF273E2207BCBB008AC2F2 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DF273D2207BCBB008AC2F2 /* SkillsViewController.swift */; };
+		48F4E20422223F76009367DF /* DismissableAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F4E20322223F76009367DF /* DismissableAlertController.swift */; };
 		48FE20822210F00E005600EC /* SkillCategoryTableViewHeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FE20812210F00E005600EC /* SkillCategoryTableViewHeaderFooterView.xib */; };
 		48FE20842210F255005600EC /* SkillTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE20832210F255005600EC /* SkillTableViewSection.swift */; };
 		48FF335522071D080035DB0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF335422071D080035DB0B /* AppDelegate.swift */; };
@@ -56,6 +72,10 @@
 		480699C3220788D5008061C5 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		487093592207935300C0A559 /* ProfileApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileApiClient.swift; sourceTree = "<group>"; };
 		4883833C220946960058399C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		48967B56221B77FB004A7435 /* FeedbacksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbacksViewController.swift; sourceTree = "<group>"; };
+		48967B58221B7888004A7435 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
+		48967B5A221B7988004A7435 /* FeedbacksApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbacksApiClient.swift; sourceTree = "<group>"; };
+		489C14E622224EA00080E3DA /* linkedin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linkedin.png; sourceTree = "<group>"; };
 		489DDEB2220CE66700B81DDD /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		48A7CF602210C1CF00151A0C /* SkillTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTableViewCell.swift; sourceTree = "<group>"; };
 		48A7CF622210C40C00151A0C /* SkillCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCategory.swift; sourceTree = "<group>"; };
@@ -65,9 +85,21 @@
 		48A865E022163530004A630B /* WorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
 		48A865E222163581004A630B /* WorksApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorksApiClient.swift; sourceTree = "<group>"; };
 		48A865E4221635C4004A630B /* WorkDone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkDone.swift; sourceTree = "<group>"; };
+		48A8A62F2222DEDF00A099F4 /* Octocat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Octocat.jpg; sourceTree = "<group>"; };
+		48A8E399221E1F7400E67C1A /* show_feedbacks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = show_feedbacks.png; sourceTree = "<group>"; };
+		48A8E39A221E22FB00E67C1A /* FeedbacksListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedbacksListView.xib; sourceTree = "<group>"; };
+		48A8E39F221E2FC300E67C1A /* FeedbacksListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbacksListView.swift; sourceTree = "<group>"; };
+		48ABBBE12217974600F74539 /* MessageTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTextView.swift; sourceTree = "<group>"; };
+		48AE99DA221A39160068C087 /* ValidationAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationAlertController.swift; sourceTree = "<group>"; };
+		48B27EA62220C55300F7249F /* FeedbackCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackCellView.swift; sourceTree = "<group>"; };
+		48B27EA82220C57900F7249F /* FeedbackCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedbackCellView.xib; sourceTree = "<group>"; };
+		48B9F98E22178E8B00C8177C /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		48D3EA7022163B6300D0E4F7 /* WorkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTableViewCell.swift; sourceTree = "<group>"; };
+		48DF1EF322188DEF00DB94BE /* ContactApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactApiClient.swift; sourceTree = "<group>"; };
+		48DF1EF522188E5A00DB94BE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		48DF273B2207B884008AC2F2 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		48DF273D2207BCBB008AC2F2 /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
+		48F4E20322223F76009367DF /* DismissableAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissableAlertController.swift; sourceTree = "<group>"; };
 		48FE20812210F00E005600EC /* SkillCategoryTableViewHeaderFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkillCategoryTableViewHeaderFooterView.xib; sourceTree = "<group>"; };
 		48FE20832210F255005600EC /* SkillTableViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTableViewSection.swift; sourceTree = "<group>"; };
 		48FF335122071D080035DB0B /* portfolio-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "portfolio-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +152,8 @@
 				48A7CF642210C6EC00151A0C /* Skill.swift */,
 				48A7CF6A2210CF0000151A0C /* SkillsDataHandler.swift */,
 				48A865E4221635C4004A630B /* WorkDone.swift */,
+				48DF1EF522188E5A00DB94BE /* Message.swift */,
+				48967B58221B7888004A7435 /* Feedback.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -130,6 +164,8 @@
 				487093592207935300C0A559 /* ProfileApiClient.swift */,
 				48A7CF682210CA8F00151A0C /* SkillsApiClient.swift */,
 				48A865E222163581004A630B /* WorksApiClient.swift */,
+				48DF1EF322188DEF00DB94BE /* ContactApiClient.swift */,
+				48967B5A221B7988004A7435 /* FeedbacksApiClient.swift */,
 			);
 			path = ApiClients;
 			sourceTree = "<group>";
@@ -149,6 +185,11 @@
 				48FE20812210F00E005600EC /* SkillCategoryTableViewHeaderFooterView.xib */,
 				48FE20832210F255005600EC /* SkillTableViewSection.swift */,
 				48D3EA7022163B6300D0E4F7 /* WorkTableViewCell.swift */,
+				48ABBBE12217974600F74539 /* MessageTextView.swift */,
+				48A8E39A221E22FB00E67C1A /* FeedbacksListView.xib */,
+				48A8E39F221E2FC300E67C1A /* FeedbacksListView.swift */,
+				48B27EA62220C55300F7249F /* FeedbackCellView.swift */,
+				48B27EA82220C57900F7249F /* FeedbackCellView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,6 +258,10 @@
 				48DF273D2207BCBB008AC2F2 /* SkillsViewController.swift */,
 				4883833C220946960058399C /* TabBarController.swift */,
 				48A865E022163530004A630B /* WorkViewController.swift */,
+				48B9F98E22178E8B00C8177C /* ContactViewController.swift */,
+				48AE99DA221A39160068C087 /* ValidationAlertController.swift */,
+				48967B56221B77FB004A7435 /* FeedbacksViewController.swift */,
+				48F4E20322223F76009367DF /* DismissableAlertController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -224,6 +269,9 @@
 		48FF33832207426E0035DB0B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				489C14E622224EA00080E3DA /* linkedin.png */,
+				48A8A62F2222DEDF00A099F4 /* Octocat.jpg */,
+				48A8E399221E1F7400E67C1A /* show_feedbacks.png */,
 				48FF338622074E180035DB0B /* person.png */,
 				48FF3384220742CC0035DB0B /* html_code.jpg */,
 			);
@@ -334,12 +382,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				489C14E722224EAB0080E3DA /* linkedin.png in Resources */,
 				48FE20822210F00E005600EC /* SkillCategoryTableViewHeaderFooterView.xib in Resources */,
 				48FF335F22071D0B0035DB0B /* LaunchScreen.storyboard in Resources */,
 				48FF335C22071D0B0035DB0B /* Assets.xcassets in Resources */,
 				48FF335A22071D080035DB0B /* Main.storyboard in Resources */,
 				48FF3385220742CC0035DB0B /* html_code.jpg in Resources */,
+				48A8E39E221E2E1900E67C1A /* show_feedbacks.png in Resources */,
 				48FF338722074E180035DB0B /* person.png in Resources */,
+				48B27EA92220C57900F7249F /* FeedbackCellView.xib in Resources */,
+				48A8E39B221E22FB00E67C1A /* FeedbacksListView.xib in Resources */,
+				48A8A6302222DF0200A099F4 /* Octocat.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,21 +417,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48DF1EF422188DEF00DB94BE /* ContactApiClient.swift in Sources */,
 				48A865E5221635C4004A630B /* WorkDone.swift in Sources */,
+				48967B5B221B7988004A7435 /* FeedbacksApiClient.swift in Sources */,
+				48ABBBE22217974600F74539 /* MessageTextView.swift in Sources */,
 				48A865E122163530004A630B /* WorkViewController.swift in Sources */,
+				48B9F98F22178E8B00C8177C /* ContactViewController.swift in Sources */,
 				48A7CF6B2210CF0000151A0C /* SkillsDataHandler.swift in Sources */,
 				48FF335722071D080035DB0B /* MainViewController.swift in Sources */,
+				48967B57221B77FB004A7435 /* FeedbacksViewController.swift in Sources */,
 				48D3EA7122163B6300D0E4F7 /* WorkTableViewCell.swift in Sources */,
 				480699C4220788D5008061C5 /* Profile.swift in Sources */,
+				48F4E20422223F76009367DF /* DismissableAlertController.swift in Sources */,
 				48FF335522071D080035DB0B /* AppDelegate.swift in Sources */,
 				48DF273C2207B884008AC2F2 /* AboutViewController.swift in Sources */,
+				48967B59221B7888004A7435 /* Feedback.swift in Sources */,
+				48B27EA72220C55300F7249F /* FeedbackCellView.swift in Sources */,
 				4883833D220946960058399C /* TabBarController.swift in Sources */,
 				48DF273E2207BCBB008AC2F2 /* SkillsViewController.swift in Sources */,
 				48FE20842210F255005600EC /* SkillTableViewSection.swift in Sources */,
 				48A7CF612210C1CF00151A0C /* SkillTableViewCell.swift in Sources */,
 				48A7CF632210C40C00151A0C /* SkillCategory.swift in Sources */,
 				489DDEB3220CE66700B81DDD /* ImageLoader.swift in Sources */,
+				48AE99DB221A39160068C087 /* ValidationAlertController.swift in Sources */,
+				48DF1EF622188E5A00DB94BE /* Message.swift in Sources */,
 				48A7CF652210C6EC00151A0C /* Skill.swift in Sources */,
+				48A8E3A0221E2FC300E67C1A /* FeedbacksListView.swift in Sources */,
 				4870935A2207935300C0A559 /* ProfileApiClient.swift in Sources */,
 				48A865E322163581004A630B /* WorksApiClient.swift in Sources */,
 				48A7CF692210CA8F00151A0C /* SkillsApiClient.swift in Sources */,

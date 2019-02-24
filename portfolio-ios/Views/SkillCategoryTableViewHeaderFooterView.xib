@@ -12,12 +12,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SkillTableViewSection" customModule="portfolio_ios" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+        <view contentMode="scaleToFill" id="B4z-TB-RCq" customClass="SkillTableViewSection" customModule="portfolio_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tk2-VW-qCR">
-                    <rect key="frame" x="10" y="10" width="355" height="56"/>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tk2-VW-qCR">
+                    <rect key="frame" x="8" y="14" width="359" height="56"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="76S-bE-SrX">
                             <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
@@ -27,30 +27,27 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7al-Jn-ZxJ">
-                            <rect key="frame" x="66" y="0.0" width="289" height="56"/>
+                            <rect key="frame" x="64" y="0.0" width="295" height="56"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <constraints>
-                        <constraint firstItem="76S-bE-SrX" firstAttribute="top" secondItem="tk2-VW-qCR" secondAttribute="top" id="4Ey-I9-QSn"/>
-                        <constraint firstItem="76S-bE-SrX" firstAttribute="leading" secondItem="tk2-VW-qCR" secondAttribute="leading" id="Fwg-2b-yx3"/>
-                        <constraint firstAttribute="height" constant="56" id="GaJ-X9-NAl"/>
-                    </constraints>
                 </stackView>
             </subviews>
+            <color key="backgroundColor" red="0.33725490200000002" green="0.23921568630000001" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="tk2-VW-qCR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="GwJ-Mn-xQu"/>
-                <constraint firstItem="tk2-VW-qCR" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-10" id="RxT-wk-Ime"/>
-                <constraint firstItem="tk2-VW-qCR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="vlv-Sa-cgX"/>
+                <constraint firstItem="xSB-fG-dTo" firstAttribute="bottom" secondItem="tk2-VW-qCR" secondAttribute="bottom" constant="14" id="3xC-J5-aPC"/>
+                <constraint firstItem="tk2-VW-qCR" firstAttribute="top" secondItem="B4z-TB-RCq" secondAttribute="top" constant="14" id="970-8O-FGo"/>
+                <constraint firstItem="tk2-VW-qCR" firstAttribute="leading" secondItem="xSB-fG-dTo" secondAttribute="leading" constant="8" id="DMQ-fP-H7M"/>
+                <constraint firstItem="xSB-fG-dTo" firstAttribute="trailing" secondItem="tk2-VW-qCR" secondAttribute="trailing" constant="8" id="Ruf-YQ-Cve"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <viewLayoutGuide key="safeArea" id="xSB-fG-dTo"/>
             <connections>
-                <outlet property="skillCategoryImage" destination="76S-bE-SrX" id="sTT-h8-maW"/>
-                <outlet property="skillCategoryName" destination="7al-Jn-ZxJ" id="Gcg-tv-dr7"/>
+                <outlet property="skillCategoryImage" destination="76S-bE-SrX" id="lde-OU-nHj"/>
+                <outlet property="skillCategoryName" destination="7al-Jn-ZxJ" id="K8q-mn-arl"/>
             </connections>
-            <point key="canvasLocation" x="52" y="93.103448275862078"/>
+            <point key="canvasLocation" x="-511" y="-378"/>
         </view>
     </objects>
 </document>

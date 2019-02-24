@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FeedbacksListView" customModule="portfolio_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Xr-1C-QK6">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="show_feedbacks.png" translatesAutoresizingMaskIntoConstraints="NO" id="S9A-4u-jiq">
+                            <rect key="frame" x="0.0" y="0.0" width="30" height="647"/>
+                            <color key="backgroundColor" red="0.33725490196078434" green="0.23921568627450979" blue="0.48627450980392156" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </imageView>
+                        <tableView clipsSubviews="YES" alpha="0.84999999999999998" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NsQ-VY-tqN">
+                            <rect key="frame" x="30" y="0.0" width="345" height="647"/>
+                            <color key="backgroundColor" red="0.33725490200000002" green="0.23921568630000001" blue="0.48627450979999998" alpha="0.94846960619999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        </tableView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="NDJ-ei-sgI"/>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="7Xr-1C-QK6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Cx2-1u-bqo"/>
+                <constraint firstItem="7Xr-1C-QK6" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="D1P-pM-D8X"/>
+                <constraint firstItem="7Xr-1C-QK6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hnz-34-YtV"/>
+                <constraint firstItem="7Xr-1C-QK6" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="nHV-vv-fd9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="feedbacksTableView" destination="NsQ-VY-tqN" id="sYq-kL-TSd"/>
+                <outlet property="imageShowFeedbacks" destination="S9A-4u-jiq" id="5XZ-nv-ihM"/>
+            </connections>
+            <point key="canvasLocation" x="130.40000000000001" y="147.97601199400302"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="show_feedbacks.png" width="30" height="110"/>
+    </resources>
+</document>

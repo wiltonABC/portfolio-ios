@@ -10,6 +10,8 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    @IBOutlet var githubImage: UIImageView!
+    @IBOutlet var linkedinImage: UIImageView!
     @IBOutlet var profileImage: UIImageView!
     @IBOutlet var sectionTitle: UILabel!
     @IBOutlet var shortName: UILabel!
@@ -25,6 +27,13 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.githubImage.isUserInteractionEnabled = true
+        self.githubImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(openGithub) ))
+        self.githubImage.layer.cornerRadius = 2
+        
+        self.linkedinImage.isUserInteractionEnabled = true
+        self.linkedinImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(openLinkedin) ))
         
         loadProfile()
     }
@@ -69,7 +78,7 @@ class MainViewController: UIViewController {
     private func loadProfile() {
         ProfileApiClient().getProfileById(1, success: { (profile) in
             self.profile = profile
-            
+
             //Load Profile image from remote URL
             let baseUrl = Bundle.main.infoDictionary?["WEBAPI_ROOT_URL"] as! String
             Imageloader().getImageFromUrl(baseUrl + "/" + profile.image, success: { (imageData) in
@@ -95,6 +104,22 @@ class MainViewController: UIViewController {
                 self.showProfileError()
             }
         }
+    }
+    
+    @objc func openGithub(gestureRecognizer: UITapGestureRecognizer) {
+        
+        guard let url = URL(string: "https://github.com/wiltonABC") else { return }
+        
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    
+    @objc func openLinkedin(gestureRecognizer: UITapGestureRecognizer) {
+        let stringUrl = "https://www.linkedin.com/in/wilton-gomes-da-costa-júnior-76334b91/?locale=en_US"
+        guard let encodedUrl = stringUrl.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed) else { return }
+        
+        guard let url = URL(string: encodedUrl) else { return }
+        
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
     
 }
