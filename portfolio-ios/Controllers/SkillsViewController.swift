@@ -55,9 +55,11 @@ class SkillsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: self.headerId)
+        
         var headerView = SkillTableViewSection()
         if header?.contentView.subviews.count == 0 {
             headerView = UINib(nibName: "SkillCategoryTableViewHeaderFooterView", bundle: nil).instantiate(withOwner: headerView, options: nil)[0] as! SkillTableViewSection
+        
             
             header?.contentView.addSubview(headerView)
         } else {
@@ -67,6 +69,8 @@ class SkillsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         if let category = skillCategories?[section] {
             headerView.setSkillCategorySectionData(category: category)
         }
+        
+        headerView.frame.size.height = 83.5
         
         return header
     }
@@ -82,12 +86,14 @@ class SkillsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 84
+        return 83.5
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
     
-
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        view.subviews[0].backgroundColor = UIColor(red: 86/255, green: 61/255, blue: 124/255, alpha: 1.0)
+    }
 }

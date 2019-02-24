@@ -25,7 +25,7 @@
                         </imageView>
                         <tableView clipsSubviews="YES" alpha="0.84999999999999998" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NsQ-VY-tqN">
                             <rect key="frame" x="30" y="0.0" width="345" height="647"/>
-                            <color key="backgroundColor" red="0.33725490200000002" green="0.23921568630000001" blue="0.48627450979999998" alpha="0.94846960619999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.33725490196078434" green="0.23921568627450979" blue="0.48627450980392156" alpha="0.94846960619999998" colorSpace="custom" customColorSpace="sRGB"/>
                         </tableView>
                     </subviews>
                     <viewLayoutGuide key="safeArea" id="NDJ-ei-sgI"/>

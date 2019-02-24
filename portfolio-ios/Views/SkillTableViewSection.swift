@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SkillTableViewSection: UIView {
+class SkillTableViewSection: UITableViewCell {
     
     @IBOutlet var skillCategoryName: UILabel!
     @IBOutlet var skillCategoryImage: UIImageView!

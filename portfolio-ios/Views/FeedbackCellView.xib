@@ -41,7 +41,7 @@
                     <constraint firstItem="cTP-gj-QoI" firstAttribute="top" secondItem="1pK-qE-0W8" secondAttribute="bottomMargin" constant="8" id="olz-fu-Fl5"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" red="0.33725490200000002" green="0.23921568630000001" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.33725490196078434" green="0.23921568627450979" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
                 <outlet property="feedbackAuthor" destination="cTP-gj-QoI" id="nEg-Rn-NEB"/>
                 <outlet property="feedbackText" destination="1pK-qE-0W8" id="lDK-j9-Qqc"/>
