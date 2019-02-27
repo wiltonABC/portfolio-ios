@@ -357,6 +357,7 @@
                         <outlet property="feedbackAuthor" destination="S3N-Ny-8sw" id="eiZ-5V-niu"/>
                         <outlet property="feedbackCompany" destination="Znr-JA-sDN" id="NiV-J2-q22"/>
                         <outlet property="feedbackMessage" destination="sm5-JW-yAJ" id="mP3-HR-mSm"/>
+                        <outlet property="formScroll" destination="xo5-9J-gEN" id="qpM-M9-1EQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5XJ-yH-d6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -450,6 +451,7 @@
                         <outlet property="contactMessage" destination="nta-2Y-333" id="LCr-I3-5z6"/>
                         <outlet property="contactName" destination="Vsh-di-DEy" id="jaI-gW-Gg5"/>
                         <outlet property="contactSubject" destination="FhJ-wS-bgf" id="BFN-wN-nfV"/>
+                        <outlet property="formScroll" destination="zNi-Ih-BZK" id="iI2-HH-8Pm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g3R-lB-Xbp" userLabel="First Responder" sceneMemberID="firstResponder"/>

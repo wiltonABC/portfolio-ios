@@ -14,6 +14,8 @@ class FeedbacksViewController: UIViewController, UITableViewDataSource, UITableV
     @IBOutlet var feedbackCompany: UITextField!
     @IBOutlet var feedbackMessage: MessageTextView!
     
+    @IBOutlet var formScroll: UIScrollView!
+    
     var feedbacksListView : FeedbacksListView?
     var feedbacks : [Feedback]?
 
@@ -52,6 +54,8 @@ class FeedbacksViewController: UIViewController, UITableViewDataSource, UITableV
                 }
             }
         }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(resizeScrollViewForKeyboard(notification:)), name: UIWindow.keyboardWillShowNotification, object: nil)
 
     }
     
@@ -185,5 +189,12 @@ class FeedbacksViewController: UIViewController, UITableViewDataSource, UITableV
         self.feedbackAuthor.text = ""
         self.feedbackCompany.text = ""
         self.feedbackMessage.text = ""
+    }
+    
+    @objc func resizeScrollViewForKeyboard(notification : Notification) {
+        if let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+            self.formScroll.contentSize = CGSize(width: self.formScroll.frame.width, height: self.formScroll.frame.height + keyboardFrame.cgRectValue.height)
+        }
+        
     }
 }

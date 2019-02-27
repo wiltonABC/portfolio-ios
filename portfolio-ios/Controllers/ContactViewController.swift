@@ -15,10 +15,12 @@ class ContactViewController: UIViewController {
     @IBOutlet var contactSubject: UITextField!
     @IBOutlet var contactMessage: MessageTextView!
     
+    @IBOutlet var formScroll: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(resizeScrollViewForKeyboard(notification:)), name: UIWindow.keyboardWillShowNotification, object: nil)
     }
 
     @IBAction func sendMessage(_ sender: UIButton) {
@@ -116,6 +118,13 @@ class ContactViewController: UIViewController {
         contactEmail.text = ""
         contactSubject.text = ""
         contactMessage.text = ""
+    }
+    
+    @objc func resizeScrollViewForKeyboard(notification : Notification) {
+        if let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+            self.formScroll.contentSize = CGSize(width: self.formScroll.frame.width, height: self.formScroll.frame.height + keyboardFrame.cgRectValue.height)
+        }
+        
     }
 
 }
