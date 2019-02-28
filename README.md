@@ -1,6 +1,8 @@
+<div>
 <div style="display:inline-block;width:50%;padding:20px"><img alt="IOS about screenshot" src="https://user-images.githubusercontent.com/10522495/53538232-8e431f80-3aeb-11e9-97de-8796794a08df.png"></div>
 
 <div style="display:inline-block;width:50%;padding:20px"><img alt="IOS work screenshot" src="https://user-images.githubusercontent.com/10522495/53538236-90a57980-3aeb-11e9-8cc8-4fbcaa2ff41d.png"></div>
+</div>
 
 # Native IOS Client
 This is a native IOS client app to use together with my personal portfolio web application. This mobile software does everything that the portfolio web front-end is able to do, like showing profile data and sending feedbacks and messages. 
