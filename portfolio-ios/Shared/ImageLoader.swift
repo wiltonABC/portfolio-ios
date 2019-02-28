@@ -23,10 +23,8 @@ class Imageloader {
                         let url = URL(string: stringUrl)!
                         let data = try Data(contentsOf: url)
                         Imageloader.imageCache[stringUrl] = data
-//                        print("Downloading image")
                         success(data)
                     } else {
-//                        print("Loading image from cache")
                         success(Imageloader.imageCache[stringUrl]!)
                     }
 

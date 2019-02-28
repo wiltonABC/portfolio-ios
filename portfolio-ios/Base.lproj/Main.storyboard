@@ -135,9 +135,11 @@
                         <outlet property="githubImage" destination="HSl-5n-3bD" id="Qmw-af-4Kv"/>
                         <outlet property="linkedinImage" destination="gFY-A1-mUZ" id="aqF-T5-55B"/>
                         <outlet property="mainActivity" destination="pog-RZ-DF3" id="zJ1-I8-qr1"/>
+                        <outlet property="mainHeaderView" destination="7qh-oi-Iaq" id="1xc-MK-NUA"/>
                         <outlet property="profileImage" destination="XHs-I9-1Tw" id="Tcu-Te-6hb"/>
                         <outlet property="sectionTitle" destination="jD0-Tr-eL1" id="td3-Tc-GE6"/>
                         <outlet property="shortName" destination="PcA-A2-FqY" id="Hmb-9I-8Gd"/>
+                        <outlet property="tabBarContainer" destination="gcq-ts-Gs0" id="IGO-Tl-PYm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

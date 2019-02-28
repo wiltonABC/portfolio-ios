@@ -17,10 +17,15 @@ class ContactViewController: UIViewController {
     
     @IBOutlet var formScroll: UIScrollView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(resizeScrollViewForKeyboard(notification:)), name: UIWindow.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(prepareViewForKeyboard(notification:)), name: UIWindow.keyboardWillShowNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(adjustViewWithoutKeyboard(notification:)), name: UIWindow.keyboardWillHideNotification, object: nil)
+
+
     }
 
     @IBAction func sendMessage(_ sender: UIButton) {
@@ -120,11 +125,39 @@ class ContactViewController: UIViewController {
         contactMessage.text = ""
     }
     
-    @objc func resizeScrollViewForKeyboard(notification : Notification) {
+    @objc func prepareViewForKeyboard(notification : Notification) {
         if let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
             self.formScroll.contentSize = CGSize(width: self.formScroll.frame.width, height: self.formScroll.frame.height + keyboardFrame.cgRectValue.height)
         }
         
+        if UIDevice.current.orientation.isLandscape {
+            if let mainController = self.parent?.parent as? MainViewController {
+                mainController.mainHeaderView.transform = CGAffineTransform.identity.translatedBy(x: 0, y: -mainController.mainHeaderView.frame.height)
+            
+                    mainController.tabBarContainer.transform = CGAffineTransform.identity.translatedBy(x: 0, y: -mainController.mainHeaderView.frame.height)
+
+            }
+        }
+    }
+    
+    @objc func adjustViewWithoutKeyboard(notification : Notification) {
+        if UIDevice.current.orientation.isLandscape {
+            restoreView()
+        }
+    }
+    
+    func restoreView() {
+        if let mainController = self.parent?.parent as? MainViewController {
+            mainController.mainHeaderView.transform = CGAffineTransform.identity.translatedBy(x: 0, y: 0)
+            
+            mainController.tabBarContainer.transform = CGAffineTransform.identity.translatedBy(x: 0, y: 0)
+        }
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        if UIDevice.current.orientation.isPortrait {
+            restoreView()
+        }
     }
 
 }

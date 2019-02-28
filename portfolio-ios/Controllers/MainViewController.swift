@@ -16,6 +16,11 @@ class MainViewController: UIViewController {
     @IBOutlet var sectionTitle: UILabel!
     @IBOutlet var shortName: UILabel!
     @IBOutlet var mainActivity: UILabel!
+    
+    @IBOutlet var mainHeaderView: UIView!
+    
+    @IBOutlet var tabBarContainer: UIView!
+    
     var childTabBarController : TabBarController?
     var profile : Profile?
     var alertError : UIAlertController?
@@ -120,6 +125,13 @@ class MainViewController: UIViewController {
         guard let url = URL(string: encodedUrl) else { return }
         
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        if loadingView?.isDescendant(of: self.view) ?? false {
+            loadingView?.frame.size = size
+            loadingView?.subviews[0].center = loadingView?.center ?? CGPoint(x:0, y:0)
+        }
     }
     
 }
