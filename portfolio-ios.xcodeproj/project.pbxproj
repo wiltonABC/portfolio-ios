@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		480699C4220788D5008061C5 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480699C3220788D5008061C5 /* Profile.swift */; };
+		480DB0252227706E00BFCC66 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480DB0242227706E00BFCC66 /* ApiClient.swift */; };
 		4870935A2207935300C0A559 /* ProfileApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487093592207935300C0A559 /* ProfileApiClient.swift */; };
 		4883833D220946960058399C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4883833C220946960058399C /* TabBarController.swift */; };
 		48967B57221B77FB004A7435 /* FeedbacksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48967B56221B77FB004A7435 /* FeedbacksViewController.swift */; };
@@ -70,6 +71,7 @@
 
 /* Begin PBXFileReference section */
 		480699C3220788D5008061C5 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		480DB0242227706E00BFCC66 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		487093592207935300C0A559 /* ProfileApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileApiClient.swift; sourceTree = "<group>"; };
 		4883833C220946960058399C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		48967B56221B77FB004A7435 /* FeedbacksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbacksViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				48A865E222163581004A630B /* WorksApiClient.swift */,
 				48DF1EF322188DEF00DB94BE /* ContactApiClient.swift */,
 				48967B5A221B7988004A7435 /* FeedbacksApiClient.swift */,
+				480DB0242227706E00BFCC66 /* ApiClient.swift */,
 			);
 			path = ApiClients;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				4870935A2207935300C0A559 /* ProfileApiClient.swift in Sources */,
 				48A865E322163581004A630B /* WorksApiClient.swift in Sources */,
 				48A7CF692210CA8F00151A0C /* SkillsApiClient.swift in Sources */,
+				480DB0252227706E00BFCC66 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

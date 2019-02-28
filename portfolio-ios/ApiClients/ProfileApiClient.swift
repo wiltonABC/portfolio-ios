@@ -10,18 +10,11 @@ import Foundation
 
 
 
-class ProfileApiClient {
-    
-    let webApiUrl = Bundle.main.infoDictionary?["WEBAPI_URL"] as! String
+class ProfileApiClient : ApiClient {
     
     func getProfileById(_ id : Int, success:@escaping(_ profile:Profile) -> Void, fail:@escaping(_ error:Error) -> Void) {
-        if let url = URL(string: webApiUrl + "/profiles/\(id)") {
-            var urlRequest = URLRequest(url: url)
-            urlRequest.httpMethod = "GET"
-            urlRequest.addValue("application/json", forHTTPHeaderField: "Accept")
-            urlRequest.timeoutInterval = 7000
             
-            let task = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
+            getData(resourceUrl: "/profiles/\(id)") { (data, response, error) in
                 if error == nil {
                     if let jsonData = data {
                         do {
@@ -39,9 +32,7 @@ class ProfileApiClient {
                     }
                 }
             }
-            task.resume()
-            
-        }
+
     }
     
 }
